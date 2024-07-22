@@ -1,0 +1,21 @@
+var btnSave=document.getElementById("btn_save");
+btnSave.addEventListener("click",()=>{
+    var newdiv=document.createElement("div");
+    h2=document.createElement("h2");
+    h3__1=document.createElement("h3");
+    h3__2=document.createElement("h3");
+    h3__3=document.createElement("h3");
+    h3__4=document.createElement("h3");
+    newdiv.classList.add("questions");
+    document.querySelector(".question__main").appendChild(newdiv);
+    newdiv.appendChild(h2);
+    newdiv.appendChild(h3__1);
+    newdiv.appendChild(h3__2);
+    newdiv.appendChild(h3__3);
+    newdiv.appendChild(h3__4);
+    h2.textContent=localStorage.getItem("question");
+    h3__1.textContent=localStorage.getItem("choice1");
+    h3__2.textContent=localStorage.getItem("choice2");
+    h3__3.textContent=localStorage.getItem("choice3");
+    h3__4.textContent=localStorage.getItem("choice4");
+});
