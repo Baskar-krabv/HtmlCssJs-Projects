@@ -1,9 +1,8 @@
 var btnSave=document.getElementById("btn_save");
 var main=document.querySelector(".question__main");
 var newDiv=document.querySelector(".questions");
-var count=localStorage.getItem("count");
-for(i=0;i<count;i++)
-{
+ i=0;
+    
     var h2=document.createElement("h2");
     var h3__1=document.createElement("h3");
     var h3__2=document.createElement("h3");
@@ -20,5 +19,5 @@ for(i=0;i<count;i++)
     h3__3.textContent=localStorage.getItem("choice3'"+i+"'");
     h3__4.textContent=localStorage.getItem("choice4'"+i+"'");
     i+=1;
-}
+
     
