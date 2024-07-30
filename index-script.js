@@ -33,3 +33,9 @@ var ans=new Array();
    console.log(ans);
    j+=1;
  });
+document.querySelectorAll(".input").forEach(ele => {
+  ele.addEventListener("focusout", () => {
+    ans.push(ele.value);
+    ele.value = "";
+    
+  });
